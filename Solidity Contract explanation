@@ -1,0 +1,14 @@
+Contract Explanation:
+The function deposit - deposits the funds by trigerring Deposit event
+deposit takes in 3 parameters address of the user, amount and the referral id
+The function redeemUnderlying - withdraws the funds from Aave by triggering RedeemUnderlying event.
+redeemUnderlying takes in 4 parameters, reserve address, address of the requesting user, amount and Atoken balance after redeem. Atoken is the native token of the platform that is allocated against the deposits to the users
+
+Modifiers check the correct person is calling and the reserves are active. 
+
+Import statmenets: 
+SafeMath library is imported that helps in avoiding arithmetic overflows and underflows
+IERC20.sol is for implementing & use of ERC20 starndard tokens in contrat
+
+
+
